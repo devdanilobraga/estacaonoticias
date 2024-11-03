@@ -3,13 +3,8 @@ import { Link } from 'react-router-dom';
 import './Header.scss'; 
 import logo from '../Assets/Logo.png'; 
 
-const Header = ({ onSearchChange }) => {
-  const handleSearch = (event) => {
-    event.preventDefault();
-    const searchValue = event.target.elements.search.value;
-    onSearchChange(searchValue);
-  };
-
+const Header = () => {
+ 
   return (
     <header>
       <div className="logo">
@@ -20,26 +15,26 @@ const Header = ({ onSearchChange }) => {
           <li>
             <Link to="/">
               <section className="portfolio-experiment">
-                <a>
+                <div>
                   <span className="text">Criar Conteúdo</span>
                   <span className="line -right"></span>
                   <span className="line -top"></span>
                   <span className="line -left"></span>
                   <span className="line -bottom"></span>
-                </a>
+                </div>
               </section>
             </Link>
           </li>
           <li>
             <Link to="/show">
               <section className="portfolio-experiment">
-                <a>
+                <div>
                   <span className="text">Mostra Conteúdo</span>
                   <span className="line -right"></span>
                   <span className="line -top"></span>
                   <span className="line -left"></span>
                   <span className="line -bottom"></span>
-                </a>
+                </div>
               </section>
             </Link>
           </li>

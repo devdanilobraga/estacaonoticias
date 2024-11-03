@@ -13,30 +13,26 @@ const Header = () => {
       <nav className="main-nav">
         <ul>
           <li>
-            <Link to="/">
               <section className="portfolio-experiment">
-                <div>
+                <a href="/">
                   <span className="text">Criar Conteúdo</span>
                   <span className="line -right"></span>
                   <span className="line -top"></span>
                   <span className="line -left"></span>
                   <span className="line -bottom"></span>
-                </div>
+                </a>
               </section>
-            </Link>
           </li>
           <li>
-            <Link to="/show">
               <section className="portfolio-experiment">
-                <div>
+                <a  href="/show">
                   <span className="text">Mostra Conteúdo</span>
                   <span className="line -right"></span>
                   <span className="line -top"></span>
                   <span className="line -left"></span>
                   <span className="line -bottom"></span>
-                </div>
+                </a>
               </section>
-            </Link>
           </li>
         </ul>
       </nav>
